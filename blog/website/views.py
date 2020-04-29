@@ -1,6 +1,10 @@
 from django.shortcuts import render
+from .models import Post
 
 
 def hello_blog(request):
-    data = {'name': 'Curso de Django3'}
+    list_posts = Post.objects.all()
+    data = {'name': 'Curso de Django3',
+            'posts': list_posts }
+
     return render(request, 'index.html', data)
