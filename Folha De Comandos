@@ -1,0 +1,77 @@
+Udemy APPs web com Django 3.0
+=================
+//
+CREATE VIRTUAL ENV, INSTALAR DJANGO E STARTA SERVIDOR
+mkdir : Cria pasta
+python3 -m venv venv : Cria o virtual env
+. venv/bin/activate : Ativa o venv
+pip3 install django : Instala o Django
+	Pra saber qual pip tá instalado:
+	$ ls -l `which pip`
+	$ ls -l `which pip3`
+	$ pip show pip
+	$ pip3 show pip
+"Testando o Django"
+$ Python3
+$ import django
+$ django.VERSION
+//
+=================
+//
+NA ORDEM DE COMANDOS PARA CRIAR PROJETO DJANGO
+ Django-admin startproject nomedoprojeto : Criar o projeto Django (Aqui cria um manage.py para startar o servidor)
+ python manage.py runserver : Rodar o projeto Django
+//
+=================
+//
+COMANDOS GIT:
+git init : Criar git repositorio
+
+git status : Mostrar histórico de repositorio
+git add . : Adicionar no git
+git commit -m "Comentário" : Fazer commit
+git push origin master : Dá push pro github
+
+=Primeiro GIT=
+Fazer commit
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/abrantes32/cursodjango3.git
+git push -u origin master
+
+==Caso de problema na hora de fazer commit==
+add remote
+git remote add origin endereco
+git remote add origin 
+
+LISTAR BRANCH
+git branch -v
+//
+=================
+//
+-- PROCESSO DE DEPLOY
+Plataformas de serviço de servidores para criar máquinas virtuais para servidores
+	- google app engine
+	- microsoft azure VPS
+	- amazon aws (instancia EC2)
+	- Digital ocean (Criar uma VPS)
+	- linode (Nanode plans)
+	- bluemix da IBM
+//
+=================
+//
+Clone repository
+git clone CopiarAUrlAqui.git
+
+Install requirementst pip install -r requirements.txt
+
+Run the collectstatic command python manage.py collectstatic
+
+Create the database python manage.py migrate
+
+Create a superuser python manage.py createsuperuser
+//
+
+DEBUG = TRUE <mantem o django em modo de debug>
+ALLOWED_HOSTS = [] <OS ENDEREÇOS QUE VC QUER PERMITIR QUE A SUA APLICAÇÃO DJANGO SEJA ACESSADA, COLOCA AQUI O ENDEREÇO QUE VC QUER QUE O DJANGO PERTIMA VC ACESSAR>
