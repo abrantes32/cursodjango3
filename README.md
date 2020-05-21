@@ -16,10 +16,7 @@ Django version: 3.0.6
 
 
 ``` console
-git clone git@github.com:abrantes32/wttd.git
+git clone https://github.com/abrantes32/cursodjango3.git
 pip install requirements.txt
 # todo
 ```
-### Deployed to Heroku
-
-https://eventex-study.herokuapp.com/
